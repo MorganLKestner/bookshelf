@@ -5,7 +5,7 @@ import BookshelfList from './BookshelfList'
 
 class BooksApp extends React.Component {
   state = {
-    books: []
+    // books: []
     /**
      * TODO: Instead of using this state variable to keep track of which page
      * we're on, use the URL in the browser's address bar. This will ensure that
@@ -14,11 +14,11 @@ class BooksApp extends React.Component {
      */
     showSearchPage: false
   }
-  componentDidMount() {
-    BooksAPI.getAll().then((books) => {
-      this.setState({books})
-    })
-  }
+  // componentDidMount() {
+  //   BooksAPI.getAll().then((books) => {
+  //     this.setState({books})
+  //   })
+  // }
 
   // removeBook = () = {
   //   this.setState((state)=> ({
@@ -27,13 +27,13 @@ class BooksApp extends React.Component {
   //   BooksAPI.remove(book)
   // }
 
-  addBookToList(book) {
-    BooksAPI.create(book).then(book =>{
-      this.setState(state => ({
-        books: state.contacts.concat([ book])
-      }))
-    })
-  }
+  // addBookToList(book) {
+  //   BooksAPI.create(book).then(book =>{
+  //     this.setState(state => ({
+  //       books: state.contacts.concat([ book])
+  //     }))
+  //   })
+  // }
 
   render() {
     return (
