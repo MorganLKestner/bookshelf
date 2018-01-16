@@ -1,4 +1,4 @@
-import React, { Component } from "react" 
+import React, { Component } from "react"
 import { Link } from 'react-router-dom'
 class BookshelfList extends Component {
 
@@ -88,7 +88,7 @@ class BookshelfList extends Component {
             </div>
           </div>
         </div>
-          <Link to='/search' className='open-search' onClick={this.props.onNavigate}>Add a book</Link>
+        <Link to='/search' className='open-search' onClick={this.props.onNavigate}>Add a book</Link>
       </div>
     )
 
